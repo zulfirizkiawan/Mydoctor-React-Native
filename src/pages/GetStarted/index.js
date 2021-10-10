@@ -3,7 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import {ILMedicine} from '../../assets';
 import {Buttons, Gap} from '../../components';
 
-const GetStarted = () => {
+const GetStarted = ({navigation}) => {
   return (
     <View style={styles.page}>
       <ILMedicine height="300" width="300" style={styles.ILMedicine} />
@@ -18,9 +18,16 @@ const GetStarted = () => {
       </View>
 
       <View style={styles.Btn}>
-        <Buttons title="Register" />
+        <Buttons
+          title="Register"
+          onPress={() => navigation.navigate('Register')}
+        />
         <Gap height={10} />
-        <Buttons type="secondary" title="Login" />
+        <Buttons
+          type="secondary"
+          title="Login"
+          onPress={() => navigation.replace('Login')}
+        />
       </View>
     </View>
   );
