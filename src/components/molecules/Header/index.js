@@ -1,18 +1,13 @@
 import React from 'react';
-import {TouchableOpacity} from 'react-native';
 import {StyleSheet, Text, View} from 'react-native';
-import {IconBack} from '../../../assets';
 import {colors} from '../../../utils';
 import {Gap, Buttons} from '../../atoms';
 
-const Header = () => {
+const Header = ({onPress, title}) => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity>
-        <IconBack />
-      </TouchableOpacity>
-      <Buttons type="icon-only" />
-      <Text style={styles.text}>Header</Text>
+      <Buttons type="icon-only" onPress={onPress} />
+      <Text style={styles.text}>{title}</Text>
       <Gap width={24} />
     </View>
   );

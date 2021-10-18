@@ -2,6 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {ILDoctor} from '../../assets';
 import {Buttons, Gap, Input, Link} from '../../components';
+import {colors} from '../../utils';
 
 const Login = () => {
   return (
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
     paddingVertical: 40,
     paddingHorizontal: 20,
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: colors.white,
   },
   TxtMulai: {
     fontSize: 22,
