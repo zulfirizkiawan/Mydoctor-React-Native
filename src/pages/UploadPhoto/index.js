@@ -15,7 +15,7 @@ const UploadPhoto = () => {
             <IconAdd style={styles.addPhoto} width={35} height={35} />
           </View>
           <Gap height={10} />
-          <Text style={styles.nama}> Rizkiawan</Text>
+          <Text style={styles.nama}>Zulfi Rizkiawan</Text>
           <Text style={styles.profesi}>Mobile Dev</Text>
         </View>
         <View>

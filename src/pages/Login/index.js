@@ -4,7 +4,7 @@ import {ILDoctor} from '../../assets';
 import {Buttons, Gap, Input, Link} from '../../components';
 import {colors} from '../../utils';
 
-const Login = () => {
+const Login = ({navigation}) => {
   return (
     <View style={styles.page}>
       <ILDoctor height="200" width="200" style={styles.ildokter} />
@@ -17,7 +17,7 @@ const Login = () => {
       <Gap height={10} />
       <Link title="Lupa Password" size={12} />
       <Gap height={35} />
-      <Buttons title="Login" />
+      <Buttons title="Login" onPress={() => navigation.replace('MainApp')} />
       <Gap height={30} />
       <Link title="Belum Punya Akun" size={16} align="center" />
     </View>
