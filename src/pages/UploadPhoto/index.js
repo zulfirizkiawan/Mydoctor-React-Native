@@ -14,7 +14,8 @@ const UploadPhoto = () => {
             <Image source={ILUser} style={styles.avatar} />
             <IconAdd style={styles.addPhoto} width={35} height={35} />
           </View>
-          <Text style={styles.nama}>Zulfi Rizkiawan</Text>
+          <Gap height={10} />
+          <Text style={styles.nama}> Rizkiawan</Text>
           <Text style={styles.profesi}>Mobile Dev</Text>
         </View>
         <View>
@@ -56,7 +57,7 @@ const styles = StyleSheet.create({
   addPhoto: {
     position: 'absolute',
     bottom: 10,
-    right: 6,
+    right: 4,
   },
   nama: {
     fontFamily: 'Poppins-SemiBold',
