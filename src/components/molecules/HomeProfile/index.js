@@ -29,12 +29,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   nama: {
-    fontSize: 16,
+    fontSize: 18,
     fontFamily: 'Poppins-Bold',
     color: colors.text.primary,
   },
   profesi: {
-    fontSize: 12,
+    fontSize: 14,
     fontFamily: 'Poppins-medium',
     color: colors.text.secondary,
   },

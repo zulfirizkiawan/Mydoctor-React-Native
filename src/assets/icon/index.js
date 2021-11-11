@@ -7,6 +7,10 @@ import IconDoctorActive from './doctor-active.svg';
 import IconDoctor from './doctor.svg';
 import IconHospitalActive from './hospital-active.svg';
 import IconHospital from './hospital.svg';
+import IconHelp from './ic-help.svg';
+import IconNext from './ic-next.svg';
+import IconRate from './ic-rate.svg';
+import IconStart from './ic-star.svg';
 
 export {
   IconBack,
@@ -18,4 +22,8 @@ export {
   IconDoctor,
   IconHospitalActive,
   IconHospital,
+  IconHelp,
+  IconNext,
+  IconRate,
+  IconStart,
 };

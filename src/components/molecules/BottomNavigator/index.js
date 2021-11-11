@@ -60,5 +60,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 50,
     paddingVertical: 10,
     backgroundColor: colors.white,
+    // borderTopColor: '#000',
+    // borderTopWidth: 0.5,
+    shadowColor: '#000000',
+    shadowOffset: {
+      width: 0,
+      height: 0,
+    },
+    shadowRadius: 50,
+    shadowOpacity: 1.0,
+    elevation: 15,
   },
 });
