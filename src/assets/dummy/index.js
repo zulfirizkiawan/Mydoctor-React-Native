@@ -10,6 +10,7 @@ import DummyHospital3 from './hospital3.png';
 import DummyNews1 from './news1.png';
 import DummyNews2 from './news2.png';
 import DummyNews3 from './news3.png';
+import DummyBgHospital from './backgorungHospital.png';
 
 export {
   DummyUser,
@@ -24,4 +25,5 @@ export {
   DummyNews1,
   DummyNews2,
   DummyNews3,
+  DummyBgHospital,
 };

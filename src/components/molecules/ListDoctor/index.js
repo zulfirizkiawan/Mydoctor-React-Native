@@ -3,13 +3,13 @@ import {StyleSheet, Text, View, Image} from 'react-native';
 import {DummyDoctor2} from '../../../assets';
 import {colors} from '../../../utils';
 
-const ListDoctor = () => {
+const ListDoctor = ({FotoProfile, nama, desc}) => {
   return (
     <View style={styles.page}>
-      <Image source={DummyDoctor2} style={styles.avatar} />
+      <Image source={FotoProfile} style={styles.avatar} />
       <View style={styles.profile}>
-        <Text style={styles.namaD}>Alexander Kriwil</Text>
-        <Text style={styles.kategoriD}>baik terima kasih untuk sarannya</Text>
+        <Text style={styles.namaD}>{nama}</Text>
+        <Text style={styles.kategoriD}>{desc}</Text>
       </View>
     </View>
   );
