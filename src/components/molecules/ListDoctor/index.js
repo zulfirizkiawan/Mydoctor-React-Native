@@ -1,17 +1,17 @@
 import React from 'react';
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import {DummyDoctor2} from '../../../assets';
 import {colors} from '../../../utils';
 
-const ListDoctor = ({FotoProfile, nama, desc}) => {
+const ListDoctor = ({FotoProfile, nama, desc, onPress}) => {
   return (
-    <View style={styles.page}>
+    <TouchableOpacity style={styles.page} onPress={onPress}>
       <Image source={FotoProfile} style={styles.avatar} />
       <View style={styles.profile}>
         <Text style={styles.namaD}>{nama}</Text>
         <Text style={styles.kategoriD}>{desc}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
   namaD: {
     color: colors.text.primary,
-    fontFamily: 'Poppins-Bold',
+    fontFamily: 'Poppins-SemiBold',
     fontSize: 16,
   },
   kategoriD: {

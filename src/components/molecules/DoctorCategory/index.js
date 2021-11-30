@@ -1,16 +1,27 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import {ILUmum} from '../../../assets';
+import {StyleSheet, Text, TouchableOpacity} from 'react-native';
+import {ILMedicine, ILObat, ILPsikiater, ILUmum} from '../../../assets';
 import {colors} from '../../../utils';
 
-const DoctorCategory = () => {
+const DoctorCategory = ({category, onPress}) => {
+  const Icon = () => {
+    if (category === 'Dokter umum') {
+      return <ILUmum />;
+    }
+    if (category === 'Dokter psikiater') {
+      return <ILPsikiater />;
+    }
+    if (category === 'Dokter obat') {
+      return <ILObat />;
+    }
+    return <ILUmum />;
+  };
   return (
-    <View style={styles.container}>
-      <ILUmum />
-
+    <TouchableOpacity style={styles.container} onPress={onPress}>
+      <Icon />
       <Text style={styles.textButuh}>Saya Butuh</Text>
-      <Text style={styles.textUmum}>Dokter Umum</Text>
-    </View>
+      <Text style={styles.textUmum}>{category}</Text>
+    </TouchableOpacity>
   );
 };
 
